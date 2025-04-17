@@ -61,41 +61,9 @@ const FlashDealBanner = () => {
         </p>
       </div>
 
-      {/* Deal box */}
-      <div className="mt-3 bg-gradient-to-r from-blue-100 to-white rounded-2xl p-4 flex items-center justify-between shadow-md overflow-hidden">
-        {/* Left - logo and title */}
-        <div className="flex items-center space-x-4">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Nykaa_Logo.svg/2560px-Nykaa_Logo.svg.png"
-            alt="Nykaa logo"
-            className="w-20 h-8 object-contain"
-          />
-          <p className="font-semibold text-sm">BEST IN BEAUTY 2025</p>
-        </div>
-
-        {/* Center - discount info */}
-        <div className="text-center">
-          <p className="text-xs text-gray-600">Up To</p>
-          <p className="text-3xl font-bold text-blue-700">50% <span className="text-base font-normal">off</span></p>
-        </div>
-
-        {/* Right - label and decoration */}
-        <div className="text-right">
-          <p className="font-bold text-blue-800">Nykaa's Best In<br />Beauty Nominees</p>
-          <div className="flex justify-end mt-1">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/706/706164.png"
-              alt="cupcakes"
-              className="w-8 h-8 mr-2"
-            />
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/706/706175.png"
-              alt="cupcakes"
-              className="w-8 h-8"
-            />
-          </div>
-        </div>
-      </div>
+     <div className="mt-3">
+      <img src="https://images-static.nykaa.com/uploads/446b9dcb-92bd-4ee5-8c4a-339cf0680860.gif" alt="" />
+     </div>
     </div>
   );
 };

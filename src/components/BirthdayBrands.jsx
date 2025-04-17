@@ -1,26 +1,23 @@
 const BirthdayBrands = () => {
     const brandData = [
       {
-        title: "Up To 35% Off",
-        subtitle: "Shop Now →",
-        img: "https://images.pexels.com/photos/9620360/pexels-photo-9620360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // Replace with actual URL
+       
+        img: "https://images-static.nykaa.com/creatives/da1f0d1b-8f82-41dc-8544-59d6ead427fc/default.jpg?tr=cm-pad_resize,w-900", 
       },
       {
-        title: "New Launch Alert",
-        subtitle: "Shop Now →",
-        img: "https://images.pexels.com/photos/25355739/pexels-photo-25355739/free-photo-of-cosmetics-spread-out-in-front-of-a-mirror-and-candelabra.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", // Replace
+        
+        img: "https://images-static.nykaa.com/creatives/3bf4dc2a-7e89-461d-ab2f-9f199872aa2d/default.jpg?tr=cm-pad_resize,w-900", 
       },
       {
-        title: "Upto 30% Off",
-        subtitle: "Shop Now →",
-        img: "https://images.pexels.com/photos/12616235/pexels-photo-12616235.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load", // Replace
+       
+        img: "https://images-static.nykaa.com/creatives/9f4346d3-61b5-470d-9ed2-2696c2231373/default.jpg?tr=cm-pad_resize,w-900", 
       },
     ];
   
     return (
-      <div className="w-full bg-white py-6 px-4">
+      <div className="w-full bg-pink-50   py-6 px-4">
         {/* Top Banner */}
-        <div className="bg-pink-500 text-white rounded-md px-4 py-3 mb-6 flex items-center justify-between">
+        {/* <div className="bg-pink-500 text-white rounded-md px-4 py-3 mb-6 flex items-center justify-between">
           <div className="text-lg font-semibold">
             <span className="text-yellow-200">Extra 20% Off</span>{" "}
             On Your First App Purchase
@@ -28,23 +25,14 @@ const BirthdayBrands = () => {
           <button className="bg-lime-300 text-black font-bold px-4 py-1 rounded-full text-sm shadow">
             USE CODE EXTRA20%
           </button>
+        </div> */}
+        <div>
+          <img src="https://images-static.nykaa.com/uploads/dd133d2a-9b0e-411d-ab27-f189fab8cfa0.jpg?tr=cm-pad_resize,w-1800" alt="" />
         </div>
   
         <div className="text-center mb-6 relative">
         
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/4319/4319074.png"
-            alt="balloon"
-            className="w-6 h-6 absolute left-2 top-1"
-          />
-          <h2 className="text-xl sm:text-2xl font-bold text-pink-600">
-            Brands Bringing Their Birthday Best
-          </h2>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/4319/4319074.png"
-            alt="balloon"
-            className="w-6 h-6 absolute right-2 top-1"
-          />
+         <img src="https://images-static.nykaa.com/uploads/a0e33842-83a4-4ece-9269-f08f43519aa2.jpg?tr=cm-pad_resize,w-1800" alt="" />
         </div>
   
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
@@ -56,7 +44,7 @@ const BirthdayBrands = () => {
               <img
                 src={item.img}
                 alt={item.title}
-                className="w-full h-48 object-cover"
+                className="w-full object-cover"
               />
               <div className="p-3">
                 <h3 className="text-sm font-bold text-gray-800">{item.title}</h3>
@@ -65,6 +53,10 @@ const BirthdayBrands = () => {
             </div>
           ))}
         </div>
+
+        <div className="text-center mb-6 relative">
+        <img src="https://images-static.nykaa.com/uploads/e7485a30-22b2-45c1-981c-64da2eef25f5.png?tr=cm-pad_resize,w-1800" alt="" />
+       </div>
       </div>
     );
   };

@@ -1,12 +1,12 @@
 import { useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react"; // optional, for nice icons
+import { ChevronLeft, ChevronRight } from "lucide-react"; 
 
 const HeroSection = () => {
   const scrollRef = useRef(null);
 
   const scroll = (direction) => {
     const scrollContainer = scrollRef.current;
-    const scrollAmount = 320; // or adjust based on card size
+    const scrollAmount = 320; 
 
     if (scrollContainer) {
       scrollContainer.scrollBy({
@@ -45,11 +45,8 @@ const HeroSection = () => {
 
   return (
     <div className="bg-white px-6 py-8 relative">
-      <h2 className="text-xl text-pink-600 font-semibold mb-6 text-center">
-        Real MVPs At The Party
-      </h2>
+      <img className="" src="https://images-static.nykaa.com/uploads/357dd6c4-3331-4373-a842-bf3ba09dd6ef.jpg?tr=cm-pad_resize,w-1800" alt="" />
 
-      {/* Scroll buttons */}
       <button
         onClick={() => scroll("left")}
         className="absolute top-1/2 left-2 z-10 transform -translate-y-1/2 bg-white border border-gray-200 shadow-md rounded-full p-2 hover:bg-pink-100 transition-all"
@@ -63,7 +60,6 @@ const HeroSection = () => {
         <ChevronRight className="w-5 h-5 text-pink-600" />
       </button>
 
-      {/* Card Scroll Container */}
       <div
         ref={scrollRef}
         className="flex overflow-x-scroll space-x-4 scrollbar-hide"
