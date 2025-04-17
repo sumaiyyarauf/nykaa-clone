@@ -1,35 +1,97 @@
+import { useRef } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react"; // optional, for nice icons
+
 const HeroSection = () => {
+  const scrollRef = useRef(null);
+
+  const scroll = (direction) => {
+    const scrollContainer = scrollRef.current;
+    const scrollAmount = 320; // or adjust based on card size
+
+    if (scrollContainer) {
+      scrollContainer.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
+
   const heroData = [
     {
-      img: "https://images.pexels.com/photos/20903471/pexels-photo-20903471/free-photo-of-all-day-matte-foundation-by-nykka-commercial-photo.jpeg",
+      img: "https://images-static.nykaa.com/creatives/5fc79a88-167c-4dfa-98ea-f4d784834c2c/default.jpg?tr=cm-pad_resize,w-900",
       alt: "Best in Beauty",
     },
     {
-      img: "https://images.pexels.com/photos/29401618/pexels-photo-29401618/free-photo-of-elegant-display-of-luxury-perfume-bottles.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      img: "https://images-static.nykaa.com/creatives/16b1612d-3394-44c1-8603-f5b60f034d0d/default.jpg?tr=cm-pad_resize,w-900",
       alt: "Cherry Girl Makeup",
     },
     {
-      img: "https://images.pexels.com/photos/2633986/pexels-photo-2633986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      img: "https://images-static.nykaa.com/creatives/ef76e5cc-d19d-40f8-b2c1-8678d4ec15b5/default.jpg?tr=cm-pad_resize,w-900",
+      alt: "Free Gifts",
+    },
+    {
+      img: "https://images-static.nykaa.com/creatives/f8aa6a7b-b506-4cf2-adf5-f9b67ff36e1b/default.jpg?tr=cm-pad_resize,w-900",
+      alt: "Free Gifts",
+    },
+    {
+      img: "https://images-static.nykaa.com/creatives/b415731f-2562-493d-a410-383b0cbfd789/default.jpg?tr=cm-pad_resize,w-900",
+      alt: "Free Gifts",
+    },
+    {
+      img: "https://images-static.nykaa.com/creatives/d84a5dac-620e-46f9-8fae-d0df823d009a/default.jpg?tr=cm-pad_resize,w-900",
       alt: "Free Gifts",
     },
   ];
 
   return (
-    <div className="bg-white px-6 py-8">
+    <div className="bg-white px-6 py-8 relative">
       <h2 className="text-xl text-pink-600 font-semibold mb-6 text-center">
         Real MVPs At The Party
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      {/* Scroll buttons */}
+      <button
+        onClick={() => scroll("left")}
+        className="absolute top-1/2 left-2 z-10 transform -translate-y-1/2 bg-white border border-gray-200 shadow-md rounded-full p-2 hover:bg-pink-100 transition-all"
+      >
+        <ChevronLeft className="w-5 h-5 text-pink-600" />
+      </button>
+      <button
+        onClick={() => scroll("right")}
+        className="absolute top-1/2 right-2 z-10 transform -translate-y-1/2 bg-white border border-gray-200 shadow-md rounded-full p-2 hover:bg-pink-100 transition-all"
+      >
+        <ChevronRight className="w-5 h-5 text-pink-600" />
+      </button>
+
+      {/* Card Scroll Container */}
+      <div
+        ref={scrollRef}
+        className="flex overflow-x-scroll space-x-4 scrollbar-hide"
+        style={{
+          scrollbarWidth: "none",
+          msOverflowStyle: "none",
+        }}
+        onWheel={(e) => e.preventDefault()}
+      >
+        <style>
+          {`
+            div::-webkit-scrollbar {
+              display: none;
+            }
+          `}
+        </style>
+
         {heroData.map((item, index) => (
-          <div key={index} className="relative rounded-xl overflow-hidden shadow-md group">
+          <div
+            key={index}
+            className="relative min-w-[300px] max-w-sm flex-shrink-0 rounded-xl overflow-hidden shadow-md"
+          >
             <img
               src={item.img}
               alt={item.alt}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-full object-cover"
             />
-            <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white text-pink-600 px-5 py-2 rounded-full font-medium text-sm shadow hover:bg-pink-100 transition-all">
-              Shop Now →
-            </button>
+          
           </div>
         ))}
       </div>
