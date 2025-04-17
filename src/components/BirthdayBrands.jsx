@@ -30,9 +30,8 @@ const BirthdayBrands = () => {
           </button>
         </div>
   
-        {/* Section Title */}
         <div className="text-center mb-6 relative">
-          {/* Balloon Icons (decorative only, can be styled or animated) */}
+        
           <img
             src="https://cdn-icons-png.flaticon.com/512/4319/4319074.png"
             alt="balloon"
@@ -48,7 +47,6 @@ const BirthdayBrands = () => {
           />
         </div>
   
-        {/* Brand Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
           {brandData.map((item, idx) => (
             <div
