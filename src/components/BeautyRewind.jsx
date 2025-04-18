@@ -1,30 +1,69 @@
 const BeautyRewind = () => {
     const rewindItems = [
+      // {
+      //   year: "2025",
+      //   title: "Current Obsession? Cherry Makeup",
+      //   img: "https://images-static.nykaa.com/uploads/58169b4e-7176-449e-9b39-c3723fb69815.jpg?tr=cm-pad_resize,w-450", // Replace
+      // },
+      // {
+      //   year: "2024",
+      //   title: "Aqua Makeup Takes The Spotlight",
+      //   img: "https://images-static.nykaa.com/media/catalog/product/aqua-makeup.jpg", // Replace
+      // },
+      // {
+      //   year: "2023",
+      //   title: "The Ultimate Hair Care Hero: Rosemary",
+      //   img: "https://images-static.nykaa.com/media/catalog/product/rosemary-haircare.jpg", // Replace
+      // },
+      // {
+      //   year: "2022",
+      //   title: "The Multi-Tasking Maestro: Tints",
+      //   img: "https://images-static.nykaa.com/media/catalog/product/tints.jpg", // Replace
+      // },
+      // {
+      //   year: "2021",
+      //   title: "Clean Beauty For The Win",
+      //   img: "https://images-static.nykaa.com/media/catalog/product/clean-beauty.jpg", // Replace
+      // },
+
+
       {
-        year: "2025",
-        title: "Current Obsession? Cherry Makeup",
-        img: "https://images-static.nykaa.com/media/catalog/product/cherry-makeup.jpg", // Replace
+        img: "https://images-static.nykaa.com/uploads/58169b4e-7176-449e-9b39-c3723fb69815.jpg?tr=cm-pad_resize,w-450", 
       },
       {
-        year: "2024",
-        title: "Aqua Makeup Takes The Spotlight",
-        img: "https://images-static.nykaa.com/media/catalog/product/aqua-makeup.jpg", // Replace
+        img: "https://images-static.nykaa.com/uploads/806e71c7-c4a9-4bf1-92fd-7e7324162deb.jpg?tr=cm-pad_resize,w-450",
       },
       {
-        year: "2023",
-        title: "The Ultimate Hair Care Hero: Rosemary",
-        img: "https://images-static.nykaa.com/media/catalog/product/rosemary-haircare.jpg", // Replace
+        img: "https://images-static.nykaa.com/uploads/9b38d744-cae9-4efb-a637-e2617086351d.jpg?tr=cm-pad_resize,w-450",
       },
       {
-        year: "2022",
-        title: "The Multi-Tasking Maestro: Tints",
-        img: "https://images-static.nykaa.com/media/catalog/product/tints.jpg", // Replace
+        img: "https://images-static.nykaa.com/uploads/99ff6858-b60e-4e0a-8158-7262eb0b206c.jpg?tr=cm-pad_resize,w-450",
       },
       {
-        year: "2021",
-        title: "Clean Beauty For The Win",
-        img: "https://images-static.nykaa.com/media/catalog/product/clean-beauty.jpg", // Replace
+        img: "https://images-static.nykaa.com/uploads/ab7feb15-15f5-47b3-a278-fa0f33a85ad9.jpg?tr=cm-pad_resize,w-450",
       },
+      {
+        img: "https://images-static.nykaa.com/uploads/2fc02104-7445-4eab-a193-9d2eb43a9705.jpg?tr=cm-pad_resize,w-450",
+      },
+      {
+        img: "https://images-static.nykaa.com/uploads/d0512f2f-1b47-4ba3-846d-82d917da5a1d.jpg?tr=cm-pad_resize,w-450",
+      },
+      {
+        img: "https://images-static.nykaa.com/uploads/f8a048cc-0bad-4042-aad4-7ae475d16d3e.jpg?tr=cm-pad_resize,w-450",
+      },
+      {
+        img: "https://images-static.nykaa.com/uploads/a233baa1-cdfb-4294-97d1-176e5d60f804.jpg?tr=cm-pad_resize,w-450",
+      },
+      {
+        img: "https://images-static.nykaa.com/uploads/a300798d-d717-479f-b90b-63e1bca14231.jpg?tr=cm-pad_resize,w-450",
+      },
+      {
+        img: "https://images-static.nykaa.com/uploads/58b0364c-4a20-4477-94e8-dc4715f2122a.jpg?tr=cm-pad_resize,w-450",
+      },
+      {
+        img: "https://images-static.nykaa.com/uploads/7ad686fe-6990-4a5b-bd41-563dbb2fa898.jpg?tr=cm-pad_resize,w-450",
+      },
+
     ];
   
     return (
@@ -42,13 +81,13 @@ const BeautyRewind = () => {
           {rewindItems.map((item, idx) => (
             <div
               key={idx}
-              className="flex-shrink-0 w-48 bg-gradient-to-b from-pink-100 to-white p-4 rounded-xl text-center shadow"
+              className="flex-shrink-0 w-48 rounded-xl shadow"
             >
               <p className="font-bold text-xl mb-2 text-gray-800">{item.year}</p>
               <img
                 src={item.img}
                 alt={item.title}
-                className="h-28 w-full object-contain mb-2"
+                className=" rounded-xl w-full object-contain "
               />
               <p className="text-sm text-gray-700">{item.title}</p>
             </div>
