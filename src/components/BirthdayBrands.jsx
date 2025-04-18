@@ -1,65 +1,97 @@
+import { useRef } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
 const BirthdayBrands = () => {
-    const brandData = [
-      {
-       
-        img: "https://images-static.nykaa.com/creatives/da1f0d1b-8f82-41dc-8544-59d6ead427fc/default.jpg?tr=cm-pad_resize,w-900", 
-      },
-      {
-        
-        img: "https://images-static.nykaa.com/creatives/3bf4dc2a-7e89-461d-ab2f-9f199872aa2d/default.jpg?tr=cm-pad_resize,w-900", 
-      },
-      {
-       
-        img: "https://images-static.nykaa.com/creatives/9f4346d3-61b5-470d-9ed2-2696c2231373/default.jpg?tr=cm-pad_resize,w-900", 
-      },
-    ];
-  
-    return (
-      <div className="w-full bg-pink-50   py-6 px-4">
-        {/* Top Banner */}
-        {/* <div className="bg-pink-500 text-white rounded-md px-4 py-3 mb-6 flex items-center justify-between">
-          <div className="text-lg font-semibold">
-            <span className="text-yellow-200">Extra 20% Off</span>{" "}
-            On Your First App Purchase
+  const scrollRef = useRef(null);
+
+  const brandData = [
+    { img: "https://images-static.nykaa.com/creatives/da1f0d1b-8f82-41dc-8544-59d6ead427fc/default.jpg?tr=cm-pad_resize,w-900" },
+    { img: "https://images-static.nykaa.com/creatives/3bf4dc2a-7e89-461d-ab2f-9f199872aa2d/default.jpg?tr=cm-pad_resize,w-900" },
+    { img: "https://images-static.nykaa.com/creatives/9f4346d3-61b5-470d-9ed2-2696c2231373/default.jpg?tr=cm-pad_resize,w-900" },
+    { img: "https://images-static.nykaa.com/creatives/8d3310fa-8385-4641-b1c2-7c201439149e/default.jpg?tr=cm-pad_resize,w-900" },
+    { img: "https://images-static.nykaa.com/creatives/119f896d-4d3d-4143-8258-0736706f713b/default.jpg?tr=cm-pad_resize,w-900" },
+    { img: "https://images-static.nykaa.com/creatives/2390aa0f-4771-4a15-b862-9cb212807ff4/default.jpg?tr=cm-pad_resize,w-900" },
+    { img: "https://images-static.nykaa.com/creatives/9d19ec83-5e6d-40d6-95ce-5bb78bbbe4a7/default.jpg?tr=cm-pad_resize,w-900" },
+    { img: "https://images-static.nykaa.com/creatives/fef76029-3445-418f-a796-ab26bfb1aa3e/default.jpg?tr=cm-pad_resize,w-900" },
+    { img: "https://images-static.nykaa.com/creatives/7d1eebbc-1a33-4a6a-bafe-aeb1fd0d3502/default.jpg?tr=cm-pad_resize,w-900" },
+  ];
+
+  const scroll = (direction) => {
+    const container = scrollRef.current;
+    const scrollAmount = 320;
+
+    if (container) {
+      container.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  return (
+    <div className="w-full bg-pink-50 py-6 px-4">
+      {/* Top Banner */}
+      <div className="mb-6">
+        <img src="https://images-static.nykaa.com/uploads/dd133d2a-9b0e-411d-ab27-f189fab8cfa0.jpg?tr=cm-pad_resize,w-1800" alt="" />
+      </div>
+
+      <div className="text-center mb-6 relative">
+        <img src="https://images-static.nykaa.com/uploads/a0e33842-83a4-4ece-9269-f08f43519aa2.jpg?tr=cm-pad_resize,w-1800" alt="" />
+      </div>
+
+      {/* Mobile Layout (Stacked Column) */}
+      <div className="grid grid-cols-1 gap-4 xl:hidden">
+        {brandData.map((item, idx) => (
+          <div key={idx} className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+            <img src={item.img} alt="" className="w-full object-cover" />
           </div>
-          <button className="bg-lime-300 text-black font-bold px-4 py-1 rounded-full text-sm shadow">
-            USE CODE EXTRA20%
-          </button>
-        </div> */}
-        <div>
-          <img src="https://images-static.nykaa.com/uploads/dd133d2a-9b0e-411d-ab27-f189fab8cfa0.jpg?tr=cm-pad_resize,w-1800" alt="" />
-        </div>
-  
-        <div className="text-center mb-6 relative">
-        
-         <img src="https://images-static.nykaa.com/uploads/a0e33842-83a4-4ece-9269-f08f43519aa2.jpg?tr=cm-pad_resize,w-1800" alt="" />
-        </div>
-  
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+        ))}
+      </div>
+
+      {/* XL and up: Horizontal Scroll with Arrows */}
+      <div className="hidden xl:block relative max-w-6xl mx-auto">
+        {/* Left Arrow */}
+        <button
+          onClick={() => scroll("left")}
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 shadow rounded-full hover:bg-pink-100"
+        >
+          <ChevronLeft className="text-pink-600" />
+        </button>
+
+        {/* Right Arrow */}
+        <button
+          onClick={() => scroll("right")}
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 shadow rounded-full hover:bg-pink-100"
+        >
+          <ChevronRight className="text-pink-600" />
+        </button>
+
+        {/* Horizontal Scroll Container */}
+        <div
+          ref={scrollRef}
+          className="flex overflow-x-scroll space-x-4 scrollbar-hide scroll-smooth"
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        >
+          <style>
+            {`
+              div::-webkit-scrollbar {
+                display: none;
+              }
+            `}
+          </style>
           {brandData.map((item, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition"
-            >
-              <img
-                src={item.img}
-                alt={item.title}
-                className="w-full object-cover"
-              />
-              <div className="p-3">
-                <h3 className="text-sm font-bold text-gray-800">{item.title}</h3>
-                <p className="text-pink-500 text-sm font-medium">{item.subtitle}</p>
-              </div>
+            <div key={idx} className="flex-shrink-0 w-[300px] rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+              <img src={item.img} alt="" className="w-full object-cover" />
             </div>
           ))}
         </div>
-
-        <div className="text-center mb-6 relative">
-        <img src="https://images-static.nykaa.com/uploads/e7485a30-22b2-45c1-981c-64da2eef25f5.png?tr=cm-pad_resize,w-1800" alt="" />
-       </div>
       </div>
-    );
-  };
-  
-  export default BirthdayBrands;
-  
+
+      <div className="text-center mt-6">
+        <img src="https://images-static.nykaa.com/uploads/e7485a30-22b2-45c1-981c-64da2eef25f5.png?tr=cm-pad_resize,w-1800" alt="" />
+      </div>
+    </div>
+  );
+};
+
+export default BirthdayBrands;
