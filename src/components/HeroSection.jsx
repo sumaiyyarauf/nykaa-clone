@@ -44,6 +44,75 @@ const HeroSection = () => {
   ];
 
   return (
+    <div>
+      
+
+      <div className="block sm:hidden w-full">
+
+<div className="">
+  <img src="https://images-static.nykaa.com/uploads/4e649d68-c3bf-45c3-b1b5-bebaf729d556.gif" alt="" />
+
+  {/* Category Icons */}
+  <div className="grid grid-cols-4 ">
+    <div className="">
+      <img src="https://images-static.nykaa.com/uploads/72f4e1f5-bbce-4fce-b7d4-a0488cbfd9fc.jpg?tr=cm-pad_resize,w-225" alt="New" className="" />
+    </div>
+
+    <div className="">
+      <img src="https://images-static.nykaa.com/uploads/bd03dc2f-d434-40e4-847d-bdebd91b4321.png?tr=cm-pad_resize,w-225" alt="Makeup" className="" />
+    </div>
+
+    <div className="">
+      <img src="https://images-static.nykaa.com/uploads/62cd9a73-d5f9-46bb-81e6-5b8cea781e22.png?tr=cm-pad_resize,w-225" alt="Skincare" className="" />
+    </div>
+
+    <div className="">
+      <img src="https://images-static.nykaa.com/uploads/98d90801-03d4-4a49-9421-7214f17b76cc.png?tr=cm-pad_resize,w-225" alt="Haircare" className="" />
+    </div>
+  </div>
+  <img src="https://images-static.nykaa.com/uploads/5ef3d3cc-d36a-4958-8e21-c6720ef199b1.gif" alt="" />
+</div>
+
+<div className="py-4">
+  <img
+    src="https://i.ibb.co/h8bHQft/gift-banner.png"
+    alt="Gifts"
+    className="w-full rounded-md"
+  />
+</div>
+
+{/* 🛍️ Half Price Hours */}
+<div className="bg-pink-50 py-3 px-4 flex items-center justify-between">
+  <div>
+    <p className="text-[13px] font-bold text-pink-600">HALF PRICE HOURS</p>
+    <p className="text-[10px] text-gray-500">Ending Soon!</p>
+  </div>
+  <img
+    src="https://i.ibb.co/Kzh2XKG/products.png"
+    alt="Products"
+    className="h-12"
+  />
+  <button className="bg-pink-600 text-white text-xs px-3 py-1 rounded-full">Shop Now</button>
+</div>
+
+{/* ⏳ Lakme Offer */}
+<div className="bg-pink-100 py-3 px-4 text-sm">
+  <p className="text-gray-600 mb-1">
+    Ends In: <span className="font-semibold text-black">02h 56m 08s</span>
+  </p>
+  <div className="flex justify-between items-center">
+    <div className="text-center">
+      <h3 className="text-pink-700 font-bold text-base">UP TO 35% OFF</h3>
+      <p className="text-xs">On Entire Range</p>
+    </div>
+    <p className="text-lg font-serif">LAKMĒ</p>
+  </div>
+</div>
+
+</div>
+
+
+
     <div className="bg-white px-6 py-8 relative">
       <img className="" src="https://images-static.nykaa.com/uploads/357dd6c4-3331-4373-a842-bf3ba09dd6ef.jpg?tr=cm-pad_resize,w-1800" alt="" />
 
@@ -91,6 +160,8 @@ const HeroSection = () => {
           </div>
         ))}
       </div>
+    </div>
+
     </div>
   );
 };

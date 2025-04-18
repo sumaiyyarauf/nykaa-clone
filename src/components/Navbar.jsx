@@ -1,7 +1,11 @@
+import nykaa from "../assets/logo.png"
 const Navbar = () => {
     return (
       <nav className="flex items-center justify-between px-6 py-3 bg-white shadow-md sticky top-0 z-50">
-        <div className="text-pink-600 text-2xl font-bold">NYKAA</div>
+        
+        <div className="text-pink-600 text-2xl font-bold">
+          <img className="h-20 " src={nykaa} alt="" />
+        </div>
   
         <div className="hidden md:flex gap-5 text-sm">
           <span>Categories</span>
