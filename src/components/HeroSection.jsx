@@ -70,18 +70,16 @@ const HeroSection = () => {
       <img src="https://images-static.nykaa.com/uploads/98d90801-03d4-4a49-9421-7214f17b76cc.png?tr=cm-pad_resize,w-225" alt="Haircare" className="" />
     </div>
   </div>
-  <img className="rounded-b-xl" src="https://images-static.nykaa.com/uploads/5ef3d3cc-d36a-4958-8e21-c6720ef199b1.gif" alt="" />
+  <img className="rounded-b-xl w-full" src="https://images-static.nykaa.com/uploads/5ef3d3cc-d36a-4958-8e21-c6720ef199b1.gif" alt="" />
 </div>
 
 
 
-{/* 🛍️ Half Price Hours */}
 <div className="bg-pink-50 py-3 px-4 flex flex-col items-center justify-between">
  <img className="rounded-md" src="https://images-static.nykaa.com/uploads/0439a945-29dc-478e-915a-8e2f8619227e.jpg?tr=cm-pad_resize,w-900" alt="" />
  <img className="rounded-md" src="https://images-static.nykaa.com/uploads/655a4b4f-618f-4caf-83fd-c276ca800e7e.jpg?tr=cm-pad_resize,w-900" alt="" />
 </div>
 
-{/* ⏳ Lakme Offer */}
 <div className="bg-pink-100 py-3 px-4 text-sm">
   <p className="text-gray-600 mb-1">
     Ends In: <span className="font-semibold text-black">02h 56m 08s</span>
