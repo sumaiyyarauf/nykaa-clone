@@ -1,71 +1,160 @@
-import { Mail, Facebook, Instagram, Twitter } from "lucide-react";
+import { FaArrowUp, FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaShippingFast, FaSyncAlt, FaCertificate, FaTags, FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaPinterestP } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white px-6 py-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
-
-        {/* About Nykaa */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Nykaa</h3>
-          <p className="text-sm text-gray-300">
-            Your one-stop destination for beauty and wellness products. Explore the best in skincare, makeup, and more.
-          </p>
+    <footer className="bg-gray-800 text-white">
+      {/* Top Bar */}
+      <div className="flex flex-col md:flex-row justify-between items-center p-4 border-b border-gray-700 gap-4">
+        <div className="flex items-center gap-2">
+          <MdEmail className="text-xl" />
+          <p>Get special discount on your inbox</p>
         </div>
-
-        {/* Quick Links */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Press</a></li>
-          </ul>
+        <div className="flex items-center gap-2">
+          <input
+            type="email"
+            placeholder="Your Email"
+            className="bg-gray-700 p-2 rounded-md text-sm"
+          />
+          <button className="bg-white text-black px-4 py-2 rounded-md text-sm">SEND</button>
         </div>
-
-        {/* Customer Service */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Customer Care</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Shipping Policy</a></li>
-            <li><a href="#">Return & Refund</a></li>
-            <li><a href="#">FAQs</a></li>
-          </ul>
-        </div>
-
-        {/* Newsletter */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Stay Updated</h3>
-          <div className="flex items-center mb-4">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full px-3 py-2 rounded-l-md text-black text-sm outline-none"
-            />
-            <button className="bg-pink-600 px-4 py-2 rounded-r-md text-sm hover:bg-pink-700">
-              <Mail size={16} />
-            </button>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 text-center sm:text-left">
+          <p className="text-sm sm:text-base font-medium">EXPERIENCE THE NYKAA MOBILE APP</p>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+            <img
+             src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+             alt="Google Play"
+             className="h-10 w-auto" />
+            <img
+             src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+             alt="App Store"
+             className="h-10 w-auto" />
           </div>
-          <div className="flex space-x-4 mt-2">
-            <a href="#" className="hover:text-pink-400">
-              <Facebook size={20} />
-            </a>
-            <a href="#" className="hover:text-pink-400">
-              <Instagram size={20} />
-            </a>
-            <a href="#" className="hover:text-pink-400">
-              <Twitter size={20} />
-            </a>
+        </div>
+
+        <div className="text-sm">
+          <div className="flex items-center gap-2">
+            <FaPhoneAlt />
+            <span>FOR ANY HELP, YOU MAY CALL US AT 1800-267-4444</span>
           </div>
+          <p>(Mon to Sat, 8AM to 10PM and Sun, 10AM to 7PM)</p>
         </div>
       </div>
 
-      {/* Bottom Line */}
-      <div className="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} Nykaa. All rights reserved.
+      {/* Bottom Grid */}
+      <div className="bg-gray-700 grid grid-cols-2 md:grid-cols-5 gap-6 p-6 text-sm">
+        <div>
+          <h2 className="text-xl font-bold mb-2">NYKAA</h2>
+          <ul className="space-y-1">
+            <li>Who are we?</li>
+            <li>Careers</li>
+            <li>Authenticity</li>
+            <li>Press</li>
+            <li>Testimonials</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold mb-2">Help</h3>
+          <ul className="space-y-1">
+            <li>Contact Us</li>
+            <li>FAQs</li>
+            <li>Store Locator</li>
+            <li>Cancellation & Return</li>
+            <li>Shipping & Delivery</li>
+            <li>Sell on Nykaa</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold mb-2">Inspire Me</h3>
+          <ul className="space-y-1">
+            <li>Beauty Book</li>
+            <li>Games Board</li>
+            <li>Buying Guides</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold mb-2">Quick Links</h3>
+          <ul className="space-y-1">
+            <li>Offer Zone</li>
+            <li>New Launches</li>
+            <li>Nykaa Man</li>
+            <li>Nykaa Fashion</li>
+            <li>Nykaa Pro</li>
+            <li>Sitemap</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold mb-2">Top Categories</h3>
+          <ul className="space-y-1">
+            <li>Makeup</li>
+            <li>Skin</li>
+            <li>Hair</li>
+            <li>Bath & Body</li>
+          </ul>
+        </div>
       </div>
+
+      {/* Scroll To Top */}
+      <div className="flex justify-end items-center p-4">
+        <button className="bg-gray-600 p-3 rounded-full hover:bg-gray-500">
+          <FaArrowUp className="text-white" />
+        </button>
+      </div>
+
+
+
+      <div className="bg-white text-gray-700 py-6 grid grid-cols-2 md:grid-cols-4 text-center gap-6 px-4">
+  <div className="flex flex-col items-center">
+    <FaShippingFast className="text-pink-600 text-3xl mb-2" />
+    <p className="font-bold">FREE SHIPPING</p>
+    <p className="text-sm">On Orders Above ₹299</p>
+  </div>
+  <div className="flex flex-col items-center">
+    <FaSyncAlt className="text-pink-600 text-3xl mb-2" />
+    <p className="font-bold">EASY RETURNS</p>
+    <p className="text-sm">15-Day Return Policy</p>
+  </div>
+  <div className="flex flex-col items-center">
+    <FaCertificate className="text-pink-600 text-3xl mb-2" />
+    <p className="font-bold">100% AUTHENTIC</p>
+    <p className="text-sm">Products Sourced Directly</p>
+  </div>
+  <div className="flex flex-col items-center">
+    <FaTags className="text-pink-600 text-3xl mb-2" />
+    <p className="font-bold">1900+ BRANDS</p>
+    <p className="text-sm">1.2 Lakh+ Products</p>
+  </div>
+</div>
+
+{/* Policy Bar */}
+<div className="bg-pink-600 text-white text-center py-3 text-sm space-x-4">
+  <span className="cursor-pointer hover:underline">Terms & Conditions</span>
+  <span className="cursor-pointer hover:underline">Shipping Policy</span>
+  <span className="cursor-pointer hover:underline">Cancellation Policy</span>
+  <span className="cursor-pointer hover:underline">Privacy Policy</span>
+  <p className="mt-2">© 2025 NYKAA E-RETAIL LIMITED All Rights Reserved.</p>
+</div>
+
+{/* Social Media */}
+<div className="bg-white py-4 flex flex-col md:flex-row justify-between items-center px-4 text-sm text-gray-700">
+  <p>Show us some love <span className="text-pink-600 font-bold">❤</span> on social media</p>
+  <div className="flex space-x-4 mt-2 md:mt-0 text-lg">
+    <FaInstagram className="hover:text-pink-600 cursor-pointer" />
+    <FaFacebookF className="hover:text-pink-600 cursor-pointer" />
+    <FaYoutube className="hover:text-pink-600 cursor-pointer" />
+    <FaTwitter className="hover:text-pink-600 cursor-pointer" />
+    <FaPinterestP className="hover:text-pink-600 cursor-pointer" />
+  </div>
+</div>
+
+{/* Popular Links */}
+<div className="bg-gray-100 px-4 py-6 text-sm">
+  <h4 className="font-semibold mb-2 text-gray-800">Popular Links</h4>
+  <p className="text-gray-600">
+    Lipstick, Highlighter, Hair Serum, Concealer, Face Mask, Biotique, Lip Gloss, Perfume For Women, Facial Kit, BB Cream, Victoria Secret, Love Beauty And Planet Shampoo, Eyeliner, Hair Mask, Face Wash For Oily Skin, Ordinary, Toner, Eyeshadow Palette, Cleanser, Chemist At Play, Mascara, Loreal Professional, Hair Extensions, Olay Cream, Fogg, Lip Tint, Under Eye Cream, Wax Strips, Shower Gel, Sunscreen For Face, Insight Cosmetics, Mac Foundation, Hair Removal Machine, Mac Foundation, Choker, Oud Perfume, Makeup Pouch, Olaplex, Body Mist, Wella Shampoo, Huda Beauty Foundation, Night Cream, Facewash, Nyx, Schwarzkopf Shampoo, Blue Heaven, Peel Off Mask, Best Lip Balm, Face Scrub, Cetaphil Face Wash, Mederma Cream, Multivitamins Tablet, Himalaya Face Wash, Garnier Face Wash, Hair Color For Women, Cetaphil Moisturizer, Hair Serum, Hair Wash, Streax Hair Serum, Nivea Body Lotions, Vaseline Body Lotions, Sugar Lipstick, Biotin Tablet, Aqualogica Sunscreen
+  </p>
+</div>
     </footer>
   );
 };

@@ -7,13 +7,11 @@ const FlashDealBanner = () => {
     seconds: 23,
   });
 
-  // Countdown logic
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
         const totalSeconds =
           prev.hours * 3600 + prev.minutes * 60 + prev.seconds - 1;
-
         if (totalSeconds <= 0) {
           clearInterval(timer);
           return { hours: 0, minutes: 0, seconds: 0 };
@@ -21,8 +19,8 @@ const FlashDealBanner = () => {
 
         return {
           hours: Math.floor(totalSeconds / 3600),
-          minutes: Math.floor((totalSeconds % 3600) / 60),
-          seconds: totalSeconds % 60,
+           minutes: Math.floor((totalSeconds % 3600) / 60),
+           seconds: totalSeconds % 60,
         };
       });
     }, 1000);
@@ -34,7 +32,6 @@ const FlashDealBanner = () => {
 
   return (
     <div className="w-full px-4 py-2 bg-white">
-      {/* Top text row */}
       <div className="flex justify-between items-center text-blue-800 font-semibold text-sm px-4">
         <p>
           No RSVP Needed — <span className="italic font-bold">Shop Flash Deals Now!</span>
