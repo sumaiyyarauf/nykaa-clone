@@ -6,6 +6,7 @@ const FlashDealBanner = () => {
     minutes: 59,
     seconds: 23,
   });
+  
 
   useEffect(() => {
     const timer = setInterval(() => {

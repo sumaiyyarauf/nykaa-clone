@@ -39,7 +39,7 @@ const BirthdayBrands = () => {
         <img src="https://images-static.nykaa.com/uploads/a0e33842-83a4-4ece-9269-f08f43519aa2.jpg?tr=cm-pad_resize,w-1800" alt="" />
       </div>
 
-      {/* Mobile Layout (Stacked Column) */}
+
       <div className="grid grid-cols-1 gap-4 xl:hidden">
         {brandData.map((item, idx) => (
           <div key={idx} className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
@@ -48,7 +48,6 @@ const BirthdayBrands = () => {
         ))}
       </div>
 
-      {/* XL and up: Horizontal Scroll with Arrows */}
       <div className="hidden xl:block relative max-w-6xl mx-auto">
         {/* Left Arrow */}
         <button
