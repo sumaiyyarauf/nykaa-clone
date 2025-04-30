@@ -16,13 +16,11 @@ const BirthdayHeadliners = () => {
   
     return (
       <div className="w-full px-4 rounded-t-3xl">
-        {/* Header */}
         <div className="flex justify-center items-center mb-4 relative">
          <img src="https://images-static.nykaa.com/uploads/b1370219-0ab9-40f5-9870-b67b5bb506c9.jpg?tr=cm-pad_resize,w-1800" alt="" />
          
         </div>
   
-        {/* Hero Banner */}
         <div className="w-full max-w-6xl mx-auto rounded-xl overflow-hidden shadow-lg mb-10">
           <div className="relative">
             <img
@@ -46,7 +44,6 @@ const BirthdayHeadliners = () => {
           </div>
         </div>
   
-        {/* Product Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {products.map((item, index) => (
             <div

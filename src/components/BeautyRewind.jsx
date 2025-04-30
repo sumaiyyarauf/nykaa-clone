@@ -68,7 +68,7 @@ const BeautyRewind = () => {
   
     return (
       <div className="w-full bg-white px-4 py-8">
-        {/* Header Card */}
+
         <div className="flex space-x-4 overflow-x-auto no-scrollbar">
           <div className="flex-shrink-0 w-48 bg-pink-100 p-4 rounded-xl text-center shadow">
             <h2 className="text-lg font-bold text-pink-600 mb-1">Beauty <span className="text-pink-700">Rewind</span><br /> with <span className="italic text-black">NYKAA</span></h2>

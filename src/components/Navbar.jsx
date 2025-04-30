@@ -28,22 +28,22 @@ const Navbar = () => {
             {showBrands && (
               <div className="absolute top-full left-0 bg-white border shadow-lg p-4 w-[800px] flex flex-col gap-4 z-50">
                 <div className="grid grid-cols-4 gap-4">
-                  <img src="https://images-static.naikaa.com/media/wysiwyg/2024/wishcare-v1.png" alt="L'Oreal" className="h-8" />
-                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2019/Maybelline1211.png" alt="Lakme" className="h-8" />
-                  <img src="https://images-static.naikaa.com/media/wysiwyg/uiTools/2023-10/Lakme_118x55pxls.png" alt="Nivea" className="h-8" />
-                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/cms/beauty/menu/nykaa-cosmetics.png" alt="" className="h-8" />
-                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/cms/beauty/menu/mac.png" alt="" className="h-8" />
-                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2019/lorealparis.png" alt="" className="h-8" />
-                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2020/BrandslogoMenubar/huda-beauty.png" alt="" className="h-8" />
-                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2018/Biotique_new.png" alt="" className="h-8" />
-                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/cms/beauty/menu/natural-logo.png" alt="" className="h-8" />
-                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2018/Brandslogo/FacesCanadaa.png" alt="" className="h-8" />
-                  <img src="https://images-static.naikaa.com/media/wysiwyg/uiTools/2024-9/TFS-logo-1.png" alt="" className="h-8" />
-                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2018/colorbar-logoforui.png" alt="" className="h-8" />
-                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2018/Brandslogo/nyx_New.png" alt="" className="h-8" />
-                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2018/Brandslogo/LOTUS-HERBALS.png" alt="" className="h-8" />
-                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2019/niveaa.png" alt="" className="h-8" />
-                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/cms/beauty/menu/clinique.png" alt="" className="h-8" />
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/2024/wishcare-v1.png" alt="L'Oreal" className="h-10" />
+                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2019/Maybelline1211.png" alt="Lakme" className="h-10" />
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/uiTools/2023-10/Lakme_118x55pxls.png" alt="Nivea" className="h-10" />
+                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/cms/beauty/menu/nykaa-cosmetics.png" alt="" className="h-10" />
+                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/cms/beauty/menu/mac.png" alt="" className="h-10" />
+                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2019/lorealparis.png" alt="" className="h-10" />
+                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2020/BrandslogoMenubar/huda-beauty.png" alt="" className="h-10" />
+                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2018/Biotique_new.png" alt="" className="h-10" />
+                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/cms/beauty/menu/natural-logo.png" alt="" className="h-10" />
+                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2018/Brandslogo/FacesCanadaa.png" alt="" className="h-10" />
+                  <img src="https://images-static.naikaa.com/media/wysiwyg/uiTools/2024-9/TFS-logo-1.png" alt="" className="h-10" />
+                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2018/colorbar-logoforui.png" alt="" className="h-10" />
+                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2018/Brandslogo/nyx_New.png" alt="" className="h-10" />
+                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2018/Brandslogo/LOTUS-HERBALS.png" alt="" className="h-10" />
+                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/2019/niveaa.png" alt="" className="h-10" />
+                  <img src="https://adn-static2.nykaa.com/media/wysiwyg/cms/beauty/menu/clinique.png" alt="" className="h-10" />
 
                 </div>
               </div>

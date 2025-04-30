@@ -52,7 +52,6 @@ const HeroSection = () => {
 <div className="">
   <img src="https://images-static.nykaa.com/uploads/4e649d68-c3bf-45c3-b1b5-bebaf729d556.gif" alt="" />
 
-  {/* Category Icons */}
   <div className="grid grid-cols-4 ">
     <div className="">
       <img src="https://images-static.nykaa.com/uploads/72f4e1f5-bbce-4fce-b7d4-a0488cbfd9fc.jpg?tr=cm-pad_resize,w-225" alt="New" className="" />
@@ -75,7 +74,7 @@ const HeroSection = () => {
 
 
 
-<div className="bg-pink-50 py-3 px-4 flex flex-col items-center justify-between">
+<div className="bg-pink-50 py-3 px-4 flex flex-col items-center gap-4 justify-between">
  <img className="rounded-md" src="https://images-static.nykaa.com/uploads/0439a945-29dc-478e-915a-8e2f8619227e.jpg?tr=cm-pad_resize,w-900" alt="" />
  <img className="rounded-md" src="https://images-static.nykaa.com/uploads/655a4b4f-618f-4caf-83fd-c276ca800e7e.jpg?tr=cm-pad_resize,w-900" alt="" />
 </div>

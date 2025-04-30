@@ -1,11 +1,10 @@
-import { FaArrowUp, FaPhoneAlt } from "react-icons/fa";
+// import { FaArrowUp, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaShippingFast, FaSyncAlt, FaCertificate, FaTags, FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaPinterestP } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white">
-      {/* Top Bar */}
       <div className="flex flex-col md:flex-row justify-between items-center p-4 border-b border-gray-700 gap-4">
         <div className="flex items-center gap-2">
           <MdEmail className="text-xl" />
@@ -35,14 +34,13 @@ const Footer = () => {
 
         <div className="text-sm">
           <div className="flex items-center gap-2">
-            <FaPhoneAlt />
+            {/* <FaPhoneAlt /> */}
             <span>FOR ANY HELP, YOU MAY CALL US AT 1800-267-4444</span>
           </div>
           <p>(Mon to Sat, 8AM to 10PM and Sun, 10AM to 7PM)</p>
         </div>
       </div>
 
-      {/* Bottom Grid */}
       <div className="bg-gray-700 grid grid-cols-2 md:grid-cols-5 gap-6 p-6 text-sm">
         <div>
           <h2 className="text-xl font-bold mb-2">NYKAA</h2>
@@ -95,39 +93,57 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Scroll To Top */}
-      <div className="flex justify-end items-center p-4">
+      {/* <div className="flex justify-end items-center p-4">
         <button className="bg-gray-600 p-3 rounded-full hover:bg-gray-500">
           <FaArrowUp className="text-white" />
         </button>
-      </div>
+      </div> */}
 
 
 
-      <div className="bg-white text-gray-700 py-6 grid grid-cols-2 md:grid-cols-4 text-center gap-6 px-4">
-  <div className="flex flex-col items-center">
-    <FaShippingFast className="text-pink-600 text-3xl mb-2" />
-    <p className="font-bold">FREE SHIPPING</p>
-    <p className="text-sm">On Orders Above ₹299</p>
+<div className="bg-white text-gray-700 py-6 grid grid-cols-2 md:grid-cols-5 text-center gap-6 px-4">
+   <div className="flex flex-col md:flex-row gap-2 items-center">
+     <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Free-shipping.svg" alt="" />
+    <div>
+      <p className="font-bold">FREE SHIPPING</p>
+      <p className="text-sm">On Orders Above ₹299</p>
+    </div>
   </div>
-  <div className="flex flex-col items-center">
-    <FaSyncAlt className="text-pink-600 text-3xl mb-2" />
-    <p className="font-bold">EASY RETURNS</p>
-    <p className="text-sm">15-Day Return Policy</p>
+  <div className="flex flex-col md:flex-row gap-2 items-center">
+    <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/return_accepted.svg" alt="" />
+    <div>
+      <p className="font-bold">EASY RETURNS</p>
+      <p className="text-sm">15-Day Return Policy</p>
+    </div>
   </div>
-  <div className="flex flex-col items-center">
-    <FaCertificate className="text-pink-600 text-3xl mb-2" />
-    <p className="font-bold">100% AUTHENTIC</p>
-    <p className="text-sm">Products Sourced Directly</p>
+  <div className="flex flex-col md:flex-row gap-2 items-center">
+    <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Authenticity.svg" alt="" />
+    <div>
+      <p className="font-bold">100% AUTHENTIC</p>
+      <p className="text-sm">Products Sourced Directly</p>
+    </div>
   </div>
-  <div className="flex flex-col items-center">
-    <FaTags className="text-pink-600 text-3xl mb-2" />
-    <p className="font-bold">1900+ BRANDS</p>
-    <p className="text-sm">1.2 Lakh+ Products</p>
+  <div className="flex flex-col md:flex-row gap-2 items-center">
+    <img src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Brands.svg" alt="" />
+    <div>
+       <p className="font-bold">1900+ BRANDS</p>
+       <p className="text-sm">1.2 Lakh+ Products</p>
+    </div>
+  </div>
+
+  <div className="bg-white py-4 flex flex-col  justify-between items-center px-4 font-bold">
+  <p>Show us some love <span className="text-black font-bold">❤</span> on social media</p>
+  <div className="flex space-x-4 mt-2 md:mt-0 text-lg">
+    <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-instagram-filled.svg" alt="" className="hover:text-pink-600 cursor-pointer" />
+    <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-facebook-filled.svg" alt="" className="hover:text-pink-600 cursor-pointer" />
+    <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt="" className="hover:text-pink-600 cursor-pointer" />
+    <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-twitter-filled.svg" alt="" className="hover:text-pink-600 cursor-pointer" />
+    <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-pinterest-filled.svg" alt="" className="hover:text-pink-600 cursor-pointer" />
   </div>
 </div>
 
-{/* Policy Bar */}
+</div>
+
 <div className="bg-pink-600 text-white text-center py-3 text-sm space-x-4">
   <span className="cursor-pointer hover:underline">Terms & Conditions</span>
   <span className="cursor-pointer hover:underline">Shipping Policy</span>
@@ -136,19 +152,6 @@ const Footer = () => {
   <p className="mt-2">© 2025 NYKAA E-RETAIL LIMITED All Rights Reserved.</p>
 </div>
 
-{/* Social Media */}
-<div className="bg-white py-4 flex flex-col md:flex-row justify-between items-center px-4 text-sm text-gray-700">
-  <p>Show us some love <span className="text-pink-600 font-bold">❤</span> on social media</p>
-  <div className="flex space-x-4 mt-2 md:mt-0 text-lg">
-    <FaInstagram className="hover:text-pink-600 cursor-pointer" />
-    <FaFacebookF className="hover:text-pink-600 cursor-pointer" />
-    <FaYoutube className="hover:text-pink-600 cursor-pointer" />
-    <FaTwitter className="hover:text-pink-600 cursor-pointer" />
-    <FaPinterestP className="hover:text-pink-600 cursor-pointer" />
-  </div>
-</div>
-
-{/* Popular Links */}
 <div className="bg-gray-100 px-4 py-6 text-sm">
   <h4 className="font-semibold mb-2 text-gray-800">Popular Links</h4>
   <p className="text-gray-600">
