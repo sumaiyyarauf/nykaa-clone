@@ -30,7 +30,6 @@ const BirthdayBrands = () => {
 
   return (
     <div className="w-full bg-pink-50 py-6 px-4">
-      {/* Top Banner */}
       <div className="mb-6">
         <img src="https://images-static.nykaa.com/uploads/dd133d2a-9b0e-411d-ab27-f189fab8cfa0.jpg?tr=cm-pad_resize,w-1800" alt="" />
       </div>
@@ -49,7 +48,6 @@ const BirthdayBrands = () => {
       </div>
 
       <div className="hidden xl:block relative max-w-6xl mx-auto">
-        {/* Left Arrow */}
         <button
           onClick={() => scroll("left")}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 shadow rounded-full hover:bg-pink-100"
@@ -57,15 +55,13 @@ const BirthdayBrands = () => {
           <ChevronLeft className="text-pink-600" />
         </button>
 
-        {/* Right Arrow */}
         <button
           onClick={() => scroll("right")}
           className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 shadow rounded-full hover:bg-pink-100"
         >
           <ChevronRight className="text-pink-600" />
         </button>
-
-        {/* Horizontal Scroll Container */}
+        
         <div
           ref={scrollRef}
           className="flex overflow-x-scroll space-x-4 scrollbar-hide scroll-smooth"
