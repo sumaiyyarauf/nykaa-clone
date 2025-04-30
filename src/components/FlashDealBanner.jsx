@@ -6,7 +6,7 @@ const FlashDealBanner = () => {
     minutes: 59,
     seconds: 23,
   });
-  
+
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -26,9 +26,9 @@ const FlashDealBanner = () => {
       });
     }, 1000);
 
-    return () => clearInterval(timer);
+  return () => clearInterval(timer);
   }, []);
-
+        
   const formatTime = (n) => String(n).padStart(2, "0");
 
   return (
