@@ -1,6 +1,7 @@
 import { useState } from "react";
 import nykaa from "../assets/logo.png";
 import { Menu } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,8 +17,10 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex gap-5 text-sm text-gray-700 font-medium relative">
-          <span className="hover:text-pink-600 cursor-pointer">Categories</span>
-
+          <Link to="/" className="hover:text-pink-600 cursor-pointer">
+             Categories
+          </Link>
+          
           <div
             className="relative"
             onMouseEnter={() => setShowBrands(true)}
@@ -49,8 +52,9 @@ const Navbar = () => {
               </div>
             )}
           </div>
-
-          <span className="hover:text-pink-600 cursor-pointer">Luxe</span>
+          <Link to="/luxe" className="hover:text-pink-600 cursor-pointer">
+             Luxe
+          </Link>
           <span className="hover:text-pink-600 cursor-pointer">Nykaa Fashion</span>
           <span className="hover:text-pink-600 cursor-pointer">Beauty Advice</span>
         </div>
