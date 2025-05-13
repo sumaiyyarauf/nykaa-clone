@@ -1,4 +1,4 @@
-import TopBanner from "../components/TopBanner";
+import TopBanner from "../components/home/TopBanner";
 import Navbar from "../components/Navbar";
 import CategoryLinks from "../components/CategoryLinks";
 import LuxeHome from "../components/Luxe/LuxeHome";

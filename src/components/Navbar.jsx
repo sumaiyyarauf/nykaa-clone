@@ -26,7 +26,9 @@ const Navbar = () => {
             onMouseEnter={() => setShowBrands(true)}
             onMouseLeave={() => setShowBrands(false)}
           >
-            <span className="hover:text-pink-600 cursor-pointer">Brands</span>
+            <Link to="/makeup" className="hover:text-pink-600 cursor-pointer">
+             Brands
+            </Link>
 
             {showBrands && (
               <div className="absolute top-full left-0 bg-white border shadow-lg p-4 w-[800px] flex flex-col gap-4 z-50">

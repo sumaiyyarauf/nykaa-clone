@@ -1,7 +1,7 @@
 
 // Array of product objects with custom images
 const products = [
-  { title: 'Likha', price: '₹1,750', discount: '65%', label: 'EXPRESS SHIPPING', image: 'https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/4/3482299DLIKHA00003721_1.jpg?rnd=20200526195200&tr=w-1080' },
+  { title: 'Likha', price: '₹1,750', discount: '65%', label: 'EXPRESS SHIPPING', image: 'https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/4/3482299DLIKHA00003721_1.jpg?rnd=20200526195200&tr=w-1080', link: '/product/1' },
   { title: 'Gajra Gang', price: '₹1,800', discount: '40%', label: 'BESTSELLER', image: 'https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/1/5/15cc33eDGAJRA00006126_1.jpg?rnd=20200526195200&tr=w-512' },
   { title: 'Ganga Fashions', price: '₹4,370', discount: '5%', label: 'BESTSELLER', image: 'https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/1/6/1615784ES079B_1.jpg?rnd=20200526195200&tr=w-512' },
   { title: 'Mabish By Sonal Jain', price: '₹2,436', discount: '58%', label: 'BESTSELLER', image: 'https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/4/a4b5f74TP0528JQPI_1.jpg?rnd=20200526195200&tr=w-512' },

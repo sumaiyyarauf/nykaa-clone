@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const cards = [
   { id: 1, image: 'https://images-static.nykaa.com/uploads/d2fecf5e-704c-4a4e-b391-f5643563cccc.jpeg?tr=cm-pad_resize,w-900' },
@@ -11,7 +12,6 @@ const BeautyBanner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isSliding, setIsSliding] = useState(false);
 
-  // Handle Next Slide
   const handleNext = () => {
     setIsSliding(true);
     setTimeout(() => {
@@ -20,7 +20,6 @@ const BeautyBanner = () => {
     }, 300);
   };
 
-  // Handle Previous Slide
   const handlePrev = () => {
     setIsSliding(true);
     setTimeout(() => {
@@ -31,7 +30,6 @@ const BeautyBanner = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      
       {/* Banner Image */}
       <div className="w-full h-70 bg-pink-300 flex items-center justify-center mb-4">
         <img
@@ -54,9 +52,9 @@ const BeautyBanner = () => {
               <div className="bg-white shadow-md rounded-md overflow-hidden">
                 <img
                   src={card.image}
-                  className="w-full  object-cover"
+                  alt={`Card ${card.id}`}
+                  className="w-full object-cover"
                 />
-               
               </div>
             </div>
           ))}
@@ -65,17 +63,20 @@ const BeautyBanner = () => {
         {/* Navigation Arrows (Hidden while sliding) */}
         {!isSliding && (
           <>
+            {/* Left Button */}
             <button
               onClick={handlePrev}
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-300 text-gray-800 p-2 rounded-full hover:bg-gray-400"
+              className="absolute top-1/2 left-2 z-10 transform -translate-y-1/2 bg-white border border-gray-200 shadow-md rounded-full p-2 hover:bg-pink-100 transition-all"
             >
-              ❮
+              <ChevronLeft className="w-5 h-5 text-pink-600" />
             </button>
+
+            {/* Right Button */}
             <button
               onClick={handleNext}
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-300 text-gray-800 p-2 rounded-full hover:bg-gray-400"
+              className="absolute top-1/2 right-2 z-10 transform -translate-y-1/2 bg-white border border-gray-200 shadow-md rounded-full p-2 hover:bg-pink-100 transition-all"
             >
-              ❯
+              <ChevronRight className="w-5 h-5 text-pink-600" />
             </button>
           </>
         )}

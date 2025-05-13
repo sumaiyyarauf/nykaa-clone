@@ -1,4 +1,4 @@
-import TopBanner from "../components/TopBanner";
+import TopBanner from "../components/home/TopBanner";
 import Navbar from "../components/Navbar";
 import FilterSidebar from '../components/NykaaFashion/FilterSidebar';
 import ProductGrid from '../components/NykaaFashion/ProductGrid';
