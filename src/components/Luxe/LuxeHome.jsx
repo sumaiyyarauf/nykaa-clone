@@ -55,7 +55,6 @@ const LuxeHome = () => {
         ))}
       </div>
 
-      {/* Left Arrow */}
       <button
         className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white shadow p-2 rounded-full z-10"
         onClick={prevSlide}
@@ -63,7 +62,6 @@ const LuxeHome = () => {
         <ChevronLeft className="w-5 h-5" />
       </button>
 
-      {/* Right Arrow */}
       <button
         className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white shadow p-2 rounded-full z-10"
         onClick={nextSlide}

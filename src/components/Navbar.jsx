@@ -55,8 +55,15 @@ const Navbar = () => {
           <Link to="/luxe" className="hover:text-pink-600 cursor-pointer">
              Luxe
           </Link>
-          <span className="hover:text-pink-600 cursor-pointer">Nykaa Fashion</span>
-          <span className="hover:text-pink-600 cursor-pointer">Beauty Advice</span>
+
+          <Link to="/fashion" className="hover:text-pink-600 cursor-pointer">
+             Nykaa Fashion
+          </Link>
+
+          <Link to="/beauty" className="hover:text-pink-600 cursor-pointer">
+             Beauty Advice
+          </Link>
+
         </div>
 
         {/* Right: Search, Sign in, Bag, Hamburger */}

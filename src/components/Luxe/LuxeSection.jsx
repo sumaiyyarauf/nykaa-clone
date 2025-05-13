@@ -24,7 +24,6 @@ const LuxeSection = () => {
 
   return (
     <div className="px-4 py-6 space-y-6">
-      {/* Categories Scroll */}
       <div className="overflow-x-auto scrollbar-hide">
         <div className="flex gap-4">
           {categories.map((item, index) => (
@@ -39,7 +38,6 @@ const LuxeSection = () => {
         </div>
       </div>
 
-      {/* Editor's Picks */}
       <div>
         <h2 className="text-xl font-bold text-center mb-4">EDITORS PICKS</h2>
         <div className="overflow-x-auto scrollbar-hide">
