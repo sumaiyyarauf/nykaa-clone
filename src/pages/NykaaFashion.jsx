@@ -3,12 +3,14 @@ import Navbar from "../components/Navbar";
 import FilterSidebar from '../components/NykaaFashion/FilterSidebar';
 import ProductGrid from '../components/NykaaFashion/ProductGrid';
 import Footer from "../components/Footer";
+import CategoryLinks from "../components/CategoryLinks";
 
 const NykaaFashion = () => {
   return (
     <>
     <TopBanner />
     <Navbar />
+    <CategoryLinks />
 
     <div className="flex flex-col md:flex-row">
 

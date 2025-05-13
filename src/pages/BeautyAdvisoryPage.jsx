@@ -4,6 +4,7 @@ import BeautyBanner from '../components/BeautyAdvice/BeautyBanner';
 
 import Footer from "../components/Footer";
 import MakeupMarvels from "../components/BeautyAdvice/MakeupMarvels";
+import CategoryLinks from "../components/CategoryLinks";
 
 
 const BeautyAdvisoryPage = () => {
@@ -11,6 +12,7 @@ const BeautyAdvisoryPage = () => {
     <div>
          <TopBanner />
          <Navbar />
+         <CategoryLinks />
          <BeautyBanner />
          <MakeupMarvels />
 

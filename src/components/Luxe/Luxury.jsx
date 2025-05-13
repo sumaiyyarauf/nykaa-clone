@@ -6,7 +6,7 @@ const Luxury = [
     id: 1,
     title: "JUICY LIPS",
     desc: "Glossy balms for a dewy shine & plump lips",
-    img: "/images/juicy-lips.png", // Replace with actual image paths
+    img: "/images/juicy-lips.png",
     reverse: false,
   },
   {
