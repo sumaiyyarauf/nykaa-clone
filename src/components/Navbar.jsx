@@ -68,7 +68,6 @@ const Navbar = () => {
 
         </div>
 
-        {/* Right: Search, Sign in, Bag, Hamburger */}
         <div className="flex items-center gap-3">
           <input
             type="text"
@@ -83,7 +82,6 @@ const Navbar = () => {
             Sign in
           </button>
 
-          {/* Bag Icon */}
           <div className="p-2 rounded-full hover:bg-gray-100">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -101,14 +99,12 @@ const Navbar = () => {
             </svg>
           </div>
 
-          {/* Mobile Hamburger */}
           <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
             <Menu className="w-6 h-6 text-gray-700" />
           </button>
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
       {menuOpen && (
         <div className="md:hidden px-6 pb-4 flex flex-col gap-3 text-sm text-gray-700 bg-white shadow">
          <Link to="/" className="hover:text-pink-600 cursor-pointer">Categories</Link>
@@ -130,11 +126,9 @@ const Navbar = () => {
         </div>
       )}
 
-      {/* Login/Signup Modal */}
       {showLogin && (
         <div className="fixed inset-0 bg-black bg-opacity-40 z-50 flex items-start justify-center pt-28">
           <div className="bg-white rounded-lg shadow-xl w-80 p-4 relative">
-            {/* Close */}
             <button
               onClick={() => setShowLogin(false)}
               className="absolute top-2 right-3 text-gray-500 hover:text-black text-xl font-bold"

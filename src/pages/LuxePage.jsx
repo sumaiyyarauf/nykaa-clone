@@ -9,12 +9,14 @@ import Luxury from "../components/Luxe/Luxury";
 
 
 import Footer from "../components/Footer";
+import ChatHelp from "../components/ChatHelp";
 const LuxePage = () => {
     return (
       <div>
         <TopBanner />
         <Navbar />
         <CategoryLinks />
+        <ChatHelp/>
         <LuxeHome/>
         <LuxeSection/>
         <BeautyInFocus/>

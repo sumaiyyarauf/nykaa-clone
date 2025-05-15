@@ -9,6 +9,7 @@ import FlashDealsSection from "../components/home/FlashDealsSection";
 import BeautyRewind from "../components/home/BeautyRewind";
 import Footer from "../components/Footer";
 import NykaaLuxeBanner from "../components/home/NykaaLuxeBanner";
+import ChatHelp from "../components/ChatHelp";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <TopBanner />
       <Navbar />
       <CategoryLinks />
+      <ChatHelp/>
       <HeroSection />
       <FlashDealBanner/>
       <BirthdayHeadliners/>

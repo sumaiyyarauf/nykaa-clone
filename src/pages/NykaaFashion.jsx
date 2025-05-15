@@ -4,6 +4,7 @@ import FilterSidebar from '../components/NykaaFashion/FilterSidebar';
 import ProductGrid from '../components/NykaaFashion/ProductGrid';
 import Footer from "../components/Footer";
 import CategoryLinks from "../components/CategoryLinks";
+import ChatHelp from "../components/ChatHelp";
 
 const NykaaFashion = () => {
   return (
@@ -11,6 +12,7 @@ const NykaaFashion = () => {
     <TopBanner />
     <Navbar />
     <CategoryLinks />
+    <ChatHelp/>
 
     <div className="flex flex-col md:flex-row">
 

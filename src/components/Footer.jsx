@@ -1,4 +1,3 @@
-// import { FaArrowUp, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 
@@ -34,7 +33,6 @@ const Footer = () => {
 
         <div className="text-sm">
           <div className="flex items-center gap-2">
-            {/* <FaPhoneAlt /> */}
             <span>FOR ANY HELP, YOU MAY CALL US AT 1800-267-4444</span>
           </div>
           <p>(Mon to Sat, 8AM to 10PM and Sun, 10AM to 7PM)</p>
