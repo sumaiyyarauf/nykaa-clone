@@ -111,11 +111,11 @@ const Navbar = () => {
       {/* Mobile Dropdown */}
       {menuOpen && (
         <div className="md:hidden px-6 pb-4 flex flex-col gap-3 text-sm text-gray-700 bg-white shadow">
-          <span className="hover:text-pink-600 cursor-pointer">Categories</span>
-          <span className="hover:text-pink-600 cursor-pointer">Brands</span>
-          <span className="hover:text-pink-600 cursor-pointer">Luxe</span>
-          <span className="hover:text-pink-600 cursor-pointer">Nykaa Fashion</span>
-          <span className="hover:text-pink-600 cursor-pointer">Beauty Advice</span>
+         <Link to="/" className="hover:text-pink-600 cursor-pointer">Categories</Link>
+          <Link to="/makeup" className="hover:text-pink-600 cursor-pointer">Brands</Link>
+          <Link to="/luxe" className="hover:text-pink-600 cursor-pointer">Luxe</Link>
+          <Link to="/fashion" className="hover:text-pink-600 cursor-pointer">Nykaa Fashion</Link>
+          <Link to="/beauty" className="hover:text-pink-600 cursor-pointer">Beauty Advice</Link>
           <input
             type="text"
             placeholder="Search on Nykaa"
