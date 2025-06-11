@@ -25,6 +25,7 @@ const LuxeSection = () => {
   return (
     <div className="px-4 py-6 space-y-6">
       <div className="overflow-x-auto scrollbar-hide">
+        
         <div className="flex gap-4">
           {categories.map((item, index) => (
             <div key={index} className="flex-shrink-0 text-center">

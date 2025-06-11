@@ -45,7 +45,7 @@ const BeautyInFocus = () => {
         <p className="text-sm text-gray-500">Skincare Routine</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
         {productSections.map((item, index) => (
           <div key={index} className="text-center">
             <img
