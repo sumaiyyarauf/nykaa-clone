@@ -36,7 +36,7 @@ const BeautyInFocus = () => {
           src="https://images-static.nykaa.com/uploads/5c6fed41-adbd-42c7-a26f-a41eced6501b.jpg?tr=cm-pad_resize,w-900"
           alt="Laneige Banner"
           className="rounded-xl mx-auto"
-        />
+        />        
       </div>
 
       <div className="text-center mb-8">

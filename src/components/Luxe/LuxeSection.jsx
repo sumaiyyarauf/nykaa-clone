@@ -30,7 +30,7 @@ const LuxeSection = () => {
             <div key={index} className="flex-shrink-0 text-center">
               <img
                 src={item.img}
-                className="w-20 h-20 rounded-xl object-cover mx-auto"
+                className="w-20 h-20 md:w-auto md:h-auto rounded-xl object-cover mx-auto"
               />
 
             </div>
@@ -43,10 +43,10 @@ const LuxeSection = () => {
         <div className="overflow-x-auto scrollbar-hide">
           <div className="flex gap-4">
             {picks.map((item, index) => (
-              <div key={index} className="flex-shrink-0 w-40">
+              <div key={index} className="flex-shrink-0 w-auto">
                 <img
                   src={item.img}
-                  className="w-full h-48 object-cover rounded-lg"
+                  className="w-full h-auto max-h-72 md:max-h-96 object-cover rounded-lg"
                 />
                 
               </div>

@@ -12,9 +12,9 @@ const Navbar = () => {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="flex items-center justify-between px-4 sm:px-6 py-3">
 
-        <div className="flex items-center gap-2">
-          <img className="h-12 sm:h-16" src={nykaa} alt="Nykaa Logo" />
-        </div>
+        <Link to="/" className="hover:text-pink-600 cursor-pointer">
+             <img className="h-12 sm:h-16" src={nykaa} alt="Nykaa Logo" />
+          </Link>
 
         <div className="hidden md:flex gap-5 text-sm text-gray-700 font-medium relative">
           <Link to="/" className="hover:text-pink-600 cursor-pointer">

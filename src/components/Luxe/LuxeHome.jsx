@@ -37,7 +37,7 @@ const LuxeHome = () => {
 
   return (
     <div 
-      className="relative w-full h-[440px] overflow-hidden"
+      className="relative w-full h-auto md:h-[440px] overflow-hidden"
       onMouseEnter={stopAutoSlide}
       onMouseLeave={startAutoSlide}
     >
@@ -56,14 +56,14 @@ const LuxeHome = () => {
       </div>
 
       <button
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white shadow p-2 rounded-full z-10"
+        className="hidden md:flex absolute left-4 top-1/2 transform -translate-y-1/2 bg-white shadow p-2 rounded-full z-10"
         onClick={prevSlide}
       >
         <ChevronLeft className="w-5 h-5" />
       </button>
 
       <button
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white shadow p-2 rounded-full z-10"
+        className="hidden md:flex absolute right-4 top-1/2 transform -translate-y-1/2 bg-white shadow p-2 rounded-full z-10"
         onClick={nextSlide}
       >
         <ChevronRight className="w-5 h-5" />
